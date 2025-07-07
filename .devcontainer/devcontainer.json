@@ -1,0 +1,33 @@
+{
+  "name": "Z Dotnet Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base",
+  "features": {
+    "azure-cli": "latest",
+    "aws-cli": "latest",
+    "terraform": "latest",
+    "node": "lts"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "GitHub.vscode-github-actions",
+        "GitHub.vscode-pull-request-github",
+        "mhutchie.git-graph",
+        "hashicorp.terraform",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode.azure-account"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true,
+        "[terraform]": {
+          "editor.defaultFormatter": "hashicorp.terraform"
+        }
+      }
+    }
+  }
+}
